@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sensor-Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+      <style>
+          .rotate_image{
+              width: 223px;
+              height: 323px;
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+          }
+      </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Sensor-Test</div>
+      </div>
+      <div class="app-content">
+          <div class="app-section">
+              <div class="app-button" data-target="page_geolocation">Geolocation</div>
+              <div class="app-button" data-target="page_orientation">Device Orientation</div>
+              <div class="app-button" data-target="page_acc">Accelerometer</div>
+              <div class="app-button" data-target="page_light">Ambient Light</div>
+              <div class="app-button" data-target="page_proximity">Proximity</div>
+          </div>
+           <div class="app-section">
+               <div class="app-button" data-target="page_vibrate">Vibration</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="page_geolocation">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Geolocation</div>
+      </div>
+      <div class="app-content">
+          <div class="app-section">
+            <p id="lat_text"></p>
+            <p id="long_text"></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="page_orientation">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Device Orientation</div>
+      </div>
+      <div class="app-content">
+          <div class="app-section">
+              <p id="lr_text"></p>
+              <p id="fb_text"></p>
+              <p id="dir_text"></p>
+          </div>
+          <img id="bild_smartphone" class="rotate_image" src="https://pixabay.com/static/uploads/photo/2014/04/03/00/29/north-308422_640.png">
+      </div>
+    </div>
+    <div class="app-page" data-page="page_acc">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Accelerometer</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <p id="acc_x_grav_text"></p>
+                <p id="acc_y_grav_text"></p>
+                <p id="acc_z_grav_text"></p>
+                <p id="acc_x_text"></p>
+                <p id="acc_y_text"></p>
+                <p id="acc_z_text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="page_light">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Ambient Light</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <p id="light_text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="page_proximity">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Proximity</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <p id="proximity_text">Far</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="page_vibrate">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Vibration</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <input class="app-input" id="lange_input" placeholder="L&auml;nge">
+                <div class="app-button" onclick="vibrieren()">Vibrieren</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="zepto.js"></script>
+    <script src="app.min.js"></script>
+    <script src="pages.js">
+
+    </script>
+  </body>
+</html>
