@@ -1,4 +1,11 @@
 App.controller('home', function (page) {
+    /*if (window.webkitNotifications.checkPermission() == 0) { // 0 is PERMISSION_ALLOWED
+        // function defined in step 2
+        window.webkitNotifications.createNotification(
+            'Notification Title', 'Notification content...');
+    } else {
+        window.webkitNotifications.requestPermission();
+    }*/
 });
 
 App.controller('page_geolocation', function (page) {
@@ -20,7 +27,7 @@ App.controller('page_orientation', function (page) {
         document.getElementById("fb_text").innerHTML = "Tilt Front-Back: "+titleFB.toFixed(1);
         document.getElementById("dir_text").innerHTML = "Direction: "+direction.toFixed(1);
 
-        document.getElementById("bild_smartphone").style.transform = "rotate("+(direction-90)+"deg)";
+        document.getElementById("img_cmps").style.transform = "rotate("+(direction-90)+"deg)";
     });
 
 });
