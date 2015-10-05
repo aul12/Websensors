@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <!----------------Home----------------->
     <div class="app-page" data-page="home">
       <div class="app-topbar">
         <div class="app-title">Sensor-Test</div>
@@ -23,9 +24,13 @@
            <div class="app-section">
                <div class="app-button" data-target="page_vibrate">Vibration</div>
           </div>
+          <div class="app-section">
+              <div class="app-button" data-target="page_ui">List UI-Elements</div>
+          </div>
       </div>
     </div>
 
+    <!-------------Geolocation-------------->
     <div class="app-page" data-page="page_geolocation">
       <div class="app-topbar">
         <div class="app-button left" data-back data-autotitle></div>
@@ -39,6 +44,7 @@
       </div>
     </div>
 
+    <!-------------Orientation--------------->
     <div class="app-page" data-page="page_orientation">
       <div class="app-topbar">
         <div class="app-button left" data-back data-autotitle></div>
@@ -53,6 +59,8 @@
           <img id="img_cmps" class="rotate_image" src="https://pixabay.com/static/uploads/photo/2014/04/03/00/29/north-308422_640.png">
       </div>
     </div>
+
+    <!-------------Acceleration------------->
     <div class="app-page" data-page="page_acc">
         <div class="app-topbar">
             <div class="app-button left" data-back data-autotitle></div>
@@ -70,6 +78,7 @@
         </div>
     </div>
 
+    <!-------------Brightness--------------->
     <div class="app-page" data-page="page_light">
         <div class="app-topbar">
             <div class="app-button left" data-back data-autotitle></div>
@@ -82,6 +91,7 @@
         </div>
     </div>
 
+    <!--------------Proximity--------------->
     <div class="app-page" data-page="page_proximity">
         <div class="app-topbar">
             <div class="app-button left" data-back data-autotitle></div>
@@ -94,6 +104,7 @@
         </div>
     </div>
 
+    <!--------------Vibration--------------->
     <div class="app-page" data-page="page_vibrate">
         <div class="app-topbar">
             <div class="app-button left" data-back data-autotitle></div>
@@ -106,6 +117,39 @@
             </div>
         </div>
     </div>
+
+    <!---------------UI-Test---------------->
+    <div class="app-page" data-page="page_ui">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">UI-Elements</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section">
+                <div class="app-button">I am a Button</div>
+            </div>
+            <div class="app-section">
+                <div class="app-button">I am am Button</div>
+                <div class="app-button">Group!</div>
+            </div>
+            <div class="app-section">
+                <ul class="app-list">
+                    <label>Decimal-Part</label>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                    <label>Binary-Part</label>
+                    <li>List item 01</li>
+                    <li>List item 10</li>
+                    <li>List item 11</li>
+                </ul>
+            </div>
+            <div class="app-section">
+                <input type="text" class="app-input" placeholder="I'm an input!">
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
     <script src="https://cdn.kik.com/app/2.0.1/app.min.js"></script>

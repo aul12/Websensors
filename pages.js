@@ -1,11 +1,4 @@
 App.controller('home', function (page) {
-    /*if (window.webkitNotifications.checkPermission() == 0) { // 0 is PERMISSION_ALLOWED
-        // function defined in step 2
-        window.webkitNotifications.createNotification(
-            'Notification Title', 'Notification content...');
-    } else {
-        window.webkitNotifications.requestPermission();
-    }*/
 });
 
 App.controller('page_geolocation', function (page) {
