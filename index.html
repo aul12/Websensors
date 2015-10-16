@@ -15,7 +15,7 @@
       </div>
       <div class="app-content">
           <div class="app-section">
-              <div class="app-button" data-target="page_geolocation">Geolocation</div>
+              <div class="app-button" data-target="page_geolocation" id="testID">Geolocation</div>
               <div class="app-button" data-target="page_orientation">Device Orientation</div>
               <div class="app-button" data-target="page_acc">Accelerometer</div>
               <div class="app-button" data-target="page_light">Ambient Light</div>
@@ -26,6 +26,8 @@
           </div>
           <div class="app-section">
               <div class="app-button" data-target="page_ui">List UI-Elements</div>
+              <div class="app-button" onclick="console.log(textarea1.getText())">TEst</div>
+              <textarea class="app-input" placeholder="Message" id="textArea"></textarea>
           </div>
       </div>
     </div>
@@ -153,6 +155,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
     <script src="https://cdn.kik.com/app/2.0.1/app.min.js"></script>
+    <script src="framework/ui/button.js"></script>
+    <script src="framework/ui/textArea.js"></script>
+    <script src="framework/ui/label.js"></script>
+    <script src="framework/sensor/location.js"></script>
+    <script src="framework/sensor/orientation.js"></script>
+    <script src="framework/uiInit.js"></script>
+
     <script src="pages.js">
 
     </script>

@@ -2,26 +2,21 @@ App.controller('home', function (page) {
 });
 
 App.controller('page_geolocation', function (page) {
-    navigator.geolocation.watchPosition(function(position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-
-        document.getElementById("lat_text").innerHTML = "Latitude: "+lat.toFixed(3);
-        document.getElementById("long_text").innerHTML = "Longitude: "+lon.toFixed(3);
+    var loc = new Location();
+    loc.start(function(){
+        lat_text.setText(latitude);
+        long_text.setText(longitude);
     });
 });
 App.controller('page_orientation', function (page) {
-    window.addEventListener('deviceorientation', function(event) {
-        var tiltLR = event.gamma;
-        var titleFB = event.beta;
-        var direction = event.alpha;
+    //document.getElementById("img_cmps").style.transform = "rotate("+(direction-90)+"deg)";
 
-        document.getElementById("lr_text").innerHTML = "Tilt Left-Right: "+tiltLR.toFixed(1);
-        document.getElementById("fb_text").innerHTML = "Tilt Front-Back: "+titleFB.toFixed(1);
-        document.getElementById("dir_text").innerHTML = "Direction: "+direction.toFixed(1);
-
-        document.getElementById("img_cmps").style.transform = "rotate("+(direction-90)+"deg)";
-    });
+    var or = new Orientation();
+    or.start(function(){
+        lr_text.setText(tiltLR);
+        fb_text.setText(tiltFB);
+        dir_text.setText(direction);
+    })
 
 });
 App.controller('page_acc', function (page) {
