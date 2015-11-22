@@ -1,8 +1,11 @@
-#Websensors
+#Websensors (deprecated)
 A quick proof of concept using AppJS and the Firefox-Mobile Device-API to read some of the sensors in a 
 smartphone and display them in a nice webapp.
 
 Tested on Firefox for Android on 5.1.1.
+
+#Future of this project
+This project evolved into eduJS which can be found on https://github.com/aul12/eduJS and is under active development.
 
 ##Usage
 You don't need anything to have installed on your development machine, for copying the files to your phone adb is quite
