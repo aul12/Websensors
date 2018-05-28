@@ -1,17 +1,17 @@
-#Websensors (deprecated)
+# Websensors (deprecated)
 A quick proof of concept using AppJS and the Firefox-Mobile Device-API to read some of the sensors in a 
 smartphone and display them in a nice webapp.
 
 Tested on Firefox for Android on 5.1.1.
 
-#Future of this project
+# Future of this project
 This project evolved into eduJS which can be found on https://github.com/aul12/eduJS and is under active development.
 
-##Usage
+## Usage
 You don't need anything to have installed on your development machine, for copying the files to your phone adb is quite
 useful, but you can use your file manager of choice, aswell. On your phone you need the latest firefox browser to open
 the index.html file.
-###ADB
+### ADB
 To get the files on your phone you can use the Android Debugging Bridge, it can be found in the Android-SDK in the 
 /sdk/plattform-tools folder. It is advisable to first make a new directory on your phone where you will copy all the files,
 now you can copy the files via the command:
@@ -20,13 +20,13 @@ now you can copy the files via the command:
 adb push Websensors /sdcard/[YOUR FOLDER NAME]
 ```
 
-##Files
+## Files
 - index.html: main HTML file which loads the different librarys and which provides the UI
 - pages.js: javascript file for handling page-clicks and reading the specified sensor data
 - styles.css: used to style the compass image on the "Device Orientation" page
 
-##API-Documentations
-###AppJS
+## API-Documentations
+### AppJS
 AppJS is used for creating the UI, it is a lightweight, fast but at the same time pretty easy library for creating mobile
 webapps. The original documenation can be found on [appjs.com](http://appjs.com/). But my app is mainly based on the 
 documenation by the people of "Kik interactive" which is (in my opinion) far more structured and detailed. It can be 
